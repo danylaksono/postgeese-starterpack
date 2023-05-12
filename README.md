@@ -10,7 +10,7 @@ Credit to:
 - [Wei-Meng Lee](https://towardsdatascience.com/running-sql-queries-in-jupyter-notebook-using-jupysql-duckdb-and-mysql-3c53fbe40f8d) for the examples on JupySQL
 
 ## How to use
-- Download the data from [here](https://data.london.gov.uk/dataset/local-authority-maintained-trees), convert the CSV file to GeoJSON using QGIS. Name it `london-trees.geojson`. We can also use parquet, which is smaller in size. Change the code accordingly.
+- Download the data from [here](https://data.london.gov.uk/dataset/local-authority-maintained-trees), convert the CSV file to GeoJSON using QGIS. Name it `london-trees.geojson`. We can also use parquet, which is smaller in size. The spatial extension can also read CSV's using its GDAL driver ( see the docs for `st_read()` [here](https://duckdb.org/docs/extensions/spatial.html)). Change the code accordingly.
 - Put the file in the same folder
 - Fire up your Jupyter Notebook or upload to Google Colab
 - Have fun!
